@@ -1,0 +1,36 @@
+ErrorDocument 403 /page26800596.html
+ErrorDocument 404 /page26800596.html
+
+DirectoryIndex page26655203.html
+
+RewriteEngine On
+
+RewriteCond %{HTTP:X-Forwarded-Proto} =http
+RewriteRule ^(.*)$ https://svoy-vrach\.ru/$1 [R=301,L]
+
+RewriteCond %{HTTP:X-Forwarded-Proto} =https
+RewriteCond %{HTTP_HOST} ^www\.svoy-vrach.ru [NC]
+RewriteRule ^(.*)$ https://svoy-vrach\.ru/$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} /robots.txt
+RewriteCond "%{DOCUMENT_ROOT}/robots_%{HTTP_HOST}.txt" -f
+RewriteRule ^(.*)$ robots_%{HTTP_HOST}.txt [NC,L]
+RewriteRule ^uzi$ page26771114.html [NC]
+RewriteRule ^uzi/$ page26771114.html [NC]
+
+RewriteRule ^gynekolog_odintsovo_vniissok$ page41681879.html [NC]
+RewriteRule ^gynekolog_odintsovo_vniissok/$ page41681879.html [NC]
+
+RewriteRule ^massazh_vniissok$ page41765976.html [NC]
+RewriteRule ^massazh_vniissok/$ page41765976.html [NC]
+
+RewriteRule ^kosmetolog_vniissok$ page41778691.html [NC]
+RewriteRule ^kosmetolog_vniissok/$ page41778691.html [NC]
+
+RewriteRule ^spetsialist-po-gv$ page41947785.html [NC]
+RewriteRule ^spetsialist-po-gv/$ page41947785.html [NC]
+
+RewriteRule ^vrachi$ page41958119.html [NC]
+RewriteRule ^vrachi/$ page41958119.html [NC]
+
+

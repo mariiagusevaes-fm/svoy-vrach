@@ -1,0 +1,17 @@
+User-Agent: *
+Disallow: /page26770412.html
+Disallow: /page26800596.html
+Disallow: /tilda/form*
+Disallow: /tilda/rec*
+Disallow: /tilda/click*
+Disallow: /tilda/scroll*
+Disallow: /tilda/popup*
+Disallow: /tilda/cart*
+Disallow: /tilda/product*
+Disallow: /tilda/event*
+Disallow: /*_escaped_fragment_*
+Disallow:
+
+
+Sitemap: https://svoy-vrach.ru/sitemap.xml
+Host: https://svoy-vrach.ru
